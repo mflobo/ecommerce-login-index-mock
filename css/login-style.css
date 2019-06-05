@@ -1,0 +1,79 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('http://ssappsnwebs.com/wp-content/uploads/2018/05/tech-background-image-1-1-min.jpg');
+}
+
+.login-container {
+  background-color: white;
+  color: black;
+  margin-top: 10%;
+  border: 1px solid white;
+  border-radius: 50px;
+  max-width: 50%;
+}
+
+.logo-container {
+  background-color: darkmagenta;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  color: white;
+  text-align: center;
+}
+
+.logo-container h2 {
+  margin-bottom: 30%;
+}
+
+.logo-container img {
+  border-radius: 20%;
+  margin-top: 55%;
+}
+
+#fat-font {
+  font-weight: 600;
+}
+
+.login-form {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form-header {
+  text-align: center;
+}
+
+.form-text {
+  text-align: center;
+}
+
+.form-control {
+  font-size: 14px;
+}
+
+.forget-password a {
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.remember-me {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.forget-password {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.btn {
+  background-color: darkmagenta;
+  border: 1px solid white;
+  margin-top: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}

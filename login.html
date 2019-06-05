@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login-style.css">
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <div class="container login-container">
+          <div class="row">
+            <div class="col-md-5 logo-container">
+              <img src="rocketlogo.png" alt="Rocket Logo" height="100" width="100">
+              <h2 class="comp-name">Company<span id="fat-font">Name</span></h2>
+            </div>
+            <div class="col-md-7 login-form">
+              <div class="form-header">
+                <h1>Login Interno</h1>
+                <p class="form-text">Experimente nosso jeito de se comunicar</p>
+              </div>
+              <form id="loginForm" method="POST">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-user"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" name="username" placeholder="Username">
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                          <i class="fa fa-lock"></i>
+                      </span>
+                    </div>
+                  <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                
+                <div class="remember-me">
+                  <input type="checkbox" name="remember">           
+                  <label for="remember">Continuar conectado?</label>
+                </div>
+
+                <div class="form-group">
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Login</button>
+                </div>
+                
+                <div class="form-group forget-password">
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      
+    <script>
+      $('input').on('keypress', (event)=> {
+        if(event.which === 13){
+            $('button').click()
+        }
+        });
+        
+      $('button').click(function(){
+        $('form').submit(checkPassword(loginForm));
+      });
+
+      function checkPassword(loginForm) {
+      if (loginForm.username.value == "pitaia" && loginForm.password.value == "querominhavaga") {
+        window.location.href = "index.html"
+      } else {
+        alert("Usuário e senha incorretos.")
+      }
+      return false
+    }
+    </script>    
+  </body>
+</html>
